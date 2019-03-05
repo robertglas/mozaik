@@ -15,21 +15,21 @@ apisPollInterval: 100000
 
 dashboards:
 - columns: 4
-  rows:    3
-  title:   Mozaïk demo dashboard
+  rows:    6
+  title:   Mozaïk CI/CD dashboard
   widgets:
   -
     extension:    github
     widget:       UserBadge
-    user:         plouc
+    user:         rglas
     columns:      1
     rows:         1
     x:            0
     y:            0
   -
     extension:    github
-    widget:       OrgBadge
-    organization: ekino
+    widget:       UserBadge
+    user: robertglas
     columns:      1
     rows:         1
     x:            1
@@ -45,7 +45,7 @@ dashboards:
   -
     extension:    github
     widget:       RepoBadge
-    repository:   plouc/mozaik
+    repository:   rglas/mozaik
     columns:      1
     rows:         1
     x:            3
@@ -107,3 +107,18 @@ dashboards:
     rows:        1
     x:           3
     y:           2
+  -
+    extension:   random
+    widget:      Bark
+    columns:     1
+    rows:        1
+    x:           1
+    y:           3
+  -
+    extension:   embed
+    widget:      Markup
+    content:     'MARK'
+    columns:     1
+    rows:        1
+    x:           2
+    y:           3
